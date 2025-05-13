@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context=".CoffeeType">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_type"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/SliderDots_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:layout_alignBottom="@+id/viewPager_type"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="-28dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"></LinearLayout>
+
+
+</RelativeLayout>

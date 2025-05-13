@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context=".CoffeeChoice">
+
+    <ImageView
+        android:id="@+id/choice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/image_description"
+        android:layout_weight="1"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/espresso" />
+
+    <TextView
+        android:id="@+id/image_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="105dp"
+        android:text="Espresso"
+        android:textColor="#000"
+        android:textStyle="normal|italic"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/makeNow_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="31dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Brew now"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttoncolor"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/water_settings"
+        android:layout_width="64dp"
+        android:layout_height="189dp"
+        android:layout_below="@+id/makeNow_button"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="97dp"
+        android:layout_toRightOf="@id/makeNow_button"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_water_settings"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
